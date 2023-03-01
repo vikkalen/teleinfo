@@ -1,0 +1,38 @@
+device:
+  identifiers:
+    - teleinfo_device
+  manufacturer: "EDF"
+  model: "Téléinfo"
+entities:
+  PTEC:
+    device_class: "enum"
+    options:
+      - HP..
+      - HC..
+  PAPP:
+    device_class: "apparent_power"
+    state_class: "measurement"
+    unit_of_measurement: "VA"
+  IINST1:
+    device_class: "current"
+    state_class: "measurement"
+    unit_of_measurement: "A"
+  IINST2:
+    device_class: "current"
+    state_class: "measurement"
+    unit_of_measurement: "A"
+  IINST3:
+    device_class: "current"
+    state_class: "measurement"
+    unit_of_measurement: "A"
+  HCHC:
+    device_class: "energy"
+    state_class: "total_increasing"
+    unit_of_measurement: "Wh"
+  HCHP:
+    device_class: "energy"
+    state_class: "total_increasing"
+    unit_of_measurement: "Wh"
+
+
+
